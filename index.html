@@ -1,0 +1,49 @@
+
+<html>
+<head>
+	<title>AI DJ WEB APP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/p5@1.0.0/lib/addons/p5.sound.min.js" target="_blank"></script>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
+</head>
+<body background="music_bg.jpeg" style="background-size: cover;">
+<center>
+  	<h3 style="background-color: green;color: greenyellow;font-size:35px;padding: 10px;border-radius:30px;">AI DJ WEB APP
+	    <br>
+	    <span style="font-size:25px;">NOTE - Move your left-hand wrist up and down for increasing and decreasing the volume. 
+        Move your right-hand wrist up and down for increasing and decreasing the speed</span>
+  	</h3>
+    <button onclick="play()" style="width: 200px;height:60px;font-size: 40px;font-family: monospace;" id="playBtn">Play</button>
+	<br><br>
+  <div style="float: left;">
+    <img src="disk.gif" style="width: 200px;">
+    <br>
+    <br>
+    <br>
+    <h4>Speed:<span id="speed"></span></h4>
+  </div>
+  <div style="float: right;">
+    <img src="disk.gif" style="width: 200px;">
+    <br>
+    <br>
+    <br>
+    <h4>Volume: <span id="volume"></span></h4>
+  </div>
+  
+
+</center>
+<script src="main.js"></script>
+</body>
+</html>
